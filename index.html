@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07152f"><title>For My Favorite Human ♡</title>
+<style>
+:root{--bg:#061329;--blue:#70c9ff;--ice:#eaf7ff;--text:#f5faff;--muted:#bdcfe5;--line:#70c9ff30;--glass:#ffffff0b;--serif:Georgia,"Times New Roman",serif;--sans:Inter,"Segoe UI",Arial,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--text);font-family:var(--sans);line-height:1.65;overflow-x:hidden;background:radial-gradient(ellipse at 12% 4%,#123e70,transparent 38%),radial-gradient(ellipse at 90% 40%,#142d62,transparent 34%),#061329}
+button{font:inherit}.nav{width:min(1080px,calc(100% - 36px));margin:auto;padding:22px 0;display:flex;justify-content:space-between;align-items:center;gap:10px}.brand{font:italic 1.15rem var(--serif)}.brand span{color:var(--blue)}.pill{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:#b9e4ff;border:1px solid var(--line);padding:7px 11px;border-radius:99px}
+.hero{min-height:calc(100svh - 70px);display:grid;place-items:center;text-align:center;padding:35px 20px 100px;position:relative}.hero-inner{max-width:850px;animation:rise .9s both}.eyebrow{display:inline-block;border:1px solid #70c9ff55;background:#70c9ff0e;border-radius:99px;padding:8px 14px;color:#b9e4ff;font-size:.74rem;letter-spacing:.15em;text-transform:uppercase}
+h1{font:500 clamp(3.1rem,9.5vw,7.2rem)/.98 var(--serif);letter-spacing:-.055em;margin:28px 0 24px}h1 em,h2 em{color:var(--blue);font-weight:500}h1 em{display:block;text-shadow:0 0 48px #70c9ff2b}.hero-copy{font-size:clamp(1rem,2.1vw,1.15rem);line-height:1.9;color:var(--muted);max-width:610px;margin:auto}.hero-copy strong{color:white}
+.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{border:0;cursor:pointer;border-radius:99px;padding:13px 20px;display:inline-flex;justify-content:center;align-items:center;gap:8px;font-weight:700;font-size:.9rem;transition:transform .2s}.btn:hover{transform:translateY(-3px)}.primary{color:#061329;background:linear-gradient(120deg,#bce8ff,#69c5ff);box-shadow:0 12px 32px #3eafff25}.secondary{color:white;background:#ffffff09;border:1px solid var(--line)}.scroll{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);font-size:.7rem;color:#a8c1dc;letter-spacing:.17em;text-transform:uppercase;white-space:nowrap}.scroll span{display:block;font-size:1.2rem;animation:bob 1.6s infinite}
+section{width:min(1000px,calc(100% - 36px));margin:auto;padding:65px 0}.heading{text-align:center;margin-bottom:30px}.kicker{font-size:.73rem;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);font-weight:700}h2{font:500 clamp(2rem,5.3vw,3.5rem)/1.13 var(--serif);letter-spacing:-.035em;margin:12px 0}.sub{max-width:590px;margin:auto;color:var(--muted);line-height:1.8}.glass{background:var(--glass);border:1px solid var(--line);border-radius:25px;backdrop-filter:blur(15px);box-shadow:0 24px 80px #0002}
+.letter{padding:clamp(24px,5.5vw,52px);position:relative;overflow:hidden}.letter:after{content:"♡";position:absolute;right:20px;top:-24px;font:8rem var(--serif);color:#70c9ff0d;pointer-events:none}.letter-label{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:#b9e4ff}.letter h3{font:italic 500 clamp(1.7rem,4.5vw,2.45rem) var(--serif);margin:18px 0}.letter-copy{position:relative;white-space:pre-line;color:#e2effb;line-height:2;font-size:1rem}.signature{font:italic 1.45rem var(--serif);color:#b9e4ff;margin-top:22px}.letter-action{text-align:center;margin-top:28px}
+.memories-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}.memory{overflow:hidden;min-width:0}.photo{aspect-ratio:4/4.5;position:relative;overflow:hidden;background:linear-gradient(145deg,#173c68,#0a1c39);display:grid;place-items:center}.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .55s}.memory:hover img{transform:scale(1.045)}.placeholder{padding:20px;text-align:center;color:#b7dcf8}.placeholder b{display:block;font-size:2rem;font-weight:400}.placeholder span{font-size:.8rem}.memory-caption{padding:14px 16px 18px}.memory-caption h3{font:500 1.15rem var(--serif);margin:0 0 5px}.memory-caption p{font-size:.82rem;color:var(--muted);margin:0}.memories-note{text-align:center;color:#a8c1dc;font-size:.8rem;margin:17px auto 0;max-width:640px}
+.final{text-align:center;padding-top:40px;padding-bottom:80px}.big-heart{font-size:3rem;animation:heartbeat 1.7s infinite}.final p{max-width:570px;margin:0 auto 25px;color:var(--muted);line-height:1.9}footer{text-align:center;border-top:1px solid #ffffff12;padding:23px 16px;color:#9db6d2;font-size:.78rem}footer span{color:var(--blue)}
+.modal{position:fixed;inset:0;z-index:20;display:none;place-items:center;padding:20px;background:#020916dd;backdrop-filter:blur(12px)}.modal.open{display:grid;animation:fade .25s}.modal-card{width:min(600px,100%);max-height:85svh;overflow:auto;padding:clamp(25px,5vw,42px);position:relative}.close{position:absolute;right:15px;top:15px;width:36px;height:36px;border-radius:50%;border:1px solid var(--line);background:#ffffff0b;color:white;cursor:pointer}.modal-card h2{font-size:clamp(1.9rem,5vw,2.6rem);padding-right:15px}.modal-card p{line-height:1.9;color:#e2effb}
+#stars{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden}.star{position:absolute;width:2px;height:2px;background:#d8f0ff;border-radius:50%;opacity:.7;animation:twinkle 3s ease-in-out infinite}.heart{position:fixed;bottom:-30px;z-index:15;pointer-events:none;color:#9edcff;animation:floatUp 5s linear forwards}.confetti{position:fixed;top:-15px;width:7px;height:12px;z-index:30;pointer-events:none;animation:fall 3.4s linear forwards}
+@keyframes twinkle{50%{opacity:.15;transform:scale(.6)}}@keyframes bob{50%{transform:translateY(5px)}}@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}@keyframes heartbeat{10%,30%{transform:scale(1.12)}20%,40%{transform:scale(1)}}@keyframes floatUp{10%{opacity:.85}100%{transform:translateY(-110vh) rotate(35deg);opacity:0}}@keyframes fall{to{transform:translateY(110vh) rotate(760deg);opacity:.15}}@keyframes fade{from{opacity:0}to{opacity:1}}
+@media(max-width:700px){.nav{width:calc(100% - 28px);padding:18px 0}.brand{font-size:1rem}.pill{font-size:.58rem;padding:7px 8px}.hero{min-height:82svh;padding:35px 18px 95px}section{padding:52px 0}.memories-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.memory-caption{padding:12px}.memory-caption h3{font-size:1.03rem}.memory-caption p{font-size:.76rem}}
+@media(max-width:430px){.memories-grid{grid-template-columns:1fr}.photo{aspect-ratio:4/3}.actions .btn{width:100%;max-width:290px}.letter-copy{font-size:.95rem;line-height:1.85}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
+</style></head><body>
+<div id="stars"></div><nav class="nav"><div class="brand"><span></span></div><div class="pill"></div></nav>
+<header class="hero"><div class="hero-inner"><div class="eyebrow">👇</div><h1>To my favorite<br><em>human</em></h1><p class="hero-copy">Some people make life brighter just by being in it. <strong>You are that person for me.</strong> So I made you a tiny corner of the internet, filled with pieces of our story.  ✨</p><div class="actions"><button class="btn primary" onclick="document.querySelector('#letter').scrollIntoView({behavior:'smooth'})">A little letter for you ♡</button><button class="btn secondary" onclick="celebrate()">Make a wish ✨</button></div></div><div class="scroll">there's something just for you <span>↓</span></div></header>
+
+<section id="letter"><div class="heading"><div class="kicker">from my Brain to you</div><h2>Words I hope you <em>never forget.</em></h2></div><article class="letter glass"><div class="letter-label">A letter</div><h3>Happy birthday Vinitha. ❤️🎂✨</h3><div class="letter-copy">
+
+I hope your birthday brings you all the happiness your heart deserves. May you achieve everything you've ever dreamed of, smile a little brighter every day, and never lose the beautiful person you are.
+
+Some people come into our lives and slowly become a beautiful part of our story. You're one of those rare people I'll always be grateful to have in my life.
+
+Okay, now some important birthday rules! For next year 😂👇
+
+I'm an attention seeker, so please respond to my messages and reels and calls. Don't leave me waiting like I'm applying for a government job 😭, keep me updated daily. 
+
+And remember, "Pandi" is NOT a bad word. It's just a cute teasing word, so don't take it personally 😶‍🌫️😏🐣🐷 if only you yourself want, it's ok I'll do what ever you want. 
+
+Even if I send you 100 reels, you better watch all 100, that's the minimum requirement of our friendship. 🤌🥺🤧
+
+You are not allowed to ignore my reels, reject my nonsense, or replace me with another best friend. These are strictly against our friendship rules. 😂🤝
+
+Please remember that tolerating my nonsense is your lifetime responsibility. No refunds, no cancellation policy! 😌
+
+I hope you never get tired of our random conversations, unexpected jokes, silly arguments, and those moments when we laugh for absolutely no reason.
+
+I hope we never become those friends who talk only once in a while or remember each other only on special occasions. No matter how busy life gets, I hope we always find time for our silly conversations, random laughs, stupid jokes, and unforgettable memories.
+
+And remember, if you ever think about filing for a friendship divorce, be prepared! I'll claim 50% of your assets, 50% of your future happiness, and full custody of all our memories. The court is obviously going to be on my side. 😂⚖️
+
+We may not agree on everything, and sometimes we may have completely different opinions, but that's what makes our friendship interesting. Life would honestly be a little less entertaining without all this madness. 😂
+
+And one more thing, as we both know, your memory capacity isn't enough to remember everything, but don't worry, I can remember things for both of us. 😂😭
+
+Honestly, my selfish happiness is in finding reasons to trouble myself just to help you. I don't know why, but I genuinely feel happy whenever you come to me with some problem and I get a chance to help you figure it out.
+
+But these days, the number of troubles is decreasing. 😂 It's actually a good thing that you're handling things on your own, and I'm genuinely happy to see that. You're becoming more independent, and that's something I appreciate.
+
+But at the same time, I'm a little sad too! 🥲 Because you're not giving me much trouble anymore. I know you can handle many things yourself, but that doesn't mean you have to do everything alone. Sometimes, even if you think it's unnecessary or you can manage it yourself, just come and trouble me anyway. Let me help you, listen to you, or simply be there for you. Don't think twice before asking.
+
+And about your akka, I know her getting married isn't a small thing. I also know how much you both are attached to each other and how special that bond is. Things are going to change a little, and you'll definitely miss having her around like before. But that's life, right? Let her start this beautiful new chapter of her life. Be happy for her, support her, and don't forget that she'll always be your akka, no matter where life takes her. And I know you're already dreaming about playing with your future nephew and niece. 😂❤️ So get ready to become the coolest aunt ever! I hope your family gets even more happiness and beautiful memories in this new journey. 🥹
+
+On a serious note, I genuinely wish you a life filled with happiness, success, good health, beautiful memories, and people who love you for who you are. May all your silent wishes become beautiful realities. Never doubt your worth, and never stop believing in yourself.
+
+I hope you get everything you've been wishing for, all the opportunities you deserve, and countless reasons to smile. You deserve nothing less than the best.
+
+One thing I really wish is that years from now, we can look back at these silly conversations, jokes, and memories and laugh just as much as we do today. ❤️
+
+And finally, thank you for being a part of my story. I hope we create many more memories together, with the same madness, laughter, and friendship.
+
+Happy Birthday once again to my favourite human, Vinitha! ❤️🥹
+
+Stay blessed, stay crazy, keep smiling, and most importantly, DON'T FORGET TO REPLY TO MY MESSAGES AND CALLS AND REELS! 😂❤️🐣</div><div class="signature">and This Manishi always in your Service</div></article></section>
+
+
+
+<section class="final"><div class="big-heart">✨</div><div class="kicker">one last thing</div><h2><br><em></em></h2><p>Happy birthday Vini</p><button class="btn primary" onclick="celebrate(true)">Tap for birthday magic ✨</button></section>
+
+<div class="modal" id="surpriseModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" onclick="if(event.target===this)closeLetter()"><div class="modal-card glass"><button class="close" aria-label="Close surprise" onclick="closeLetter()">✕</button><div class="kicker">a tiny reminder, forever</div><h2 id="modalTitle">You matter more than you know. ♡</h2><p>On your hardest days, please remember: you don't have to earn love by doing everything right. You deserve kindness on the messy days, rest when you're tired, and people who show up for you. I'm always rooting for you. Happy birthday Vini. 💙</p><button class="btn primary" onclick="closeLetter()">Sending you the biggest hug ♡</button></div></div>
+<script>
+function openLetter(){document.getElementById('surpriseModal').classList.add('open');document.body.style.overflow='hidden'}function closeLetter(){document.getElementById('surpriseModal').classList.remove('open');document.body.style.overflow=''}document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLetter()});
+function celebrate(big=false){const colors=['#70c9ff','#bce8ff','#eaf7ff','#8db7ff','#d2f0ff'];for(let i=0;i<(big?130:65);i++){const el=document.createElement('i');el.className='confetti';el.style.left=Math.random()*100+'vw';el.style.background=colors[Math.floor(Math.random()*colors.length)];el.style.animationDelay=Math.random()*.8+'s';el.style.animationDuration=(2.5+Math.random()*2)+'s';document.body.appendChild(el);setTimeout(()=>el.remove(),5200)}for(let i=0;i<(big?24:12);i++)setTimeout(()=>{const h=document.createElement('span');h.className='heart';h.textContent=['♡','♥','✦','💙'][Math.floor(Math.random()*4)];h.style.left=Math.random()*100+'vw';h.style.fontSize=(15+Math.random()*24)+'px';document.body.appendChild(h);setTimeout(()=>h.remove(),7000)},i*65)}
+(function(){const sky=document.getElementById('stars');for(let i=0;i<85;i++){const s=document.createElement('i');s.className='star';s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.animationDelay=Math.random()*4+'s';s.style.animationDuration=(2+Math.random()*3)+'s';sky.appendChild(s)}})();
+</script></body></html>
